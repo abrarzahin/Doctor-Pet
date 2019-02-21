@@ -5,8 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './add.component.html'
 })
 export class AddComponent implements OnInit {
+  showForm:boolean;
+  toggleAptDisplay(){
+    this.showForm = !this.showForm;
 
-  constructor() { }
+  }
+
+  constructor() {
+    this.showForm=true;
+   }
 
   ngOnInit() {
   }
